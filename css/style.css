@@ -1,0 +1,798 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fuild {
+  overflow: hidden;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/*
+===========================================================================================
+1. header
+===========================================================================================
+*/
+.index-content {
+  color: #fff;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #000;
+}
+
+.parallax-wrapper {
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  padding-left: auto;
+  padding-right: auto;
+}
+.parallax-wrapper header {
+  height: 100px;
+  align-items: center;
+  color: #fff;
+  padding-left: 30px;
+}
+.parallax-wrapper header .logo-container {
+  padding-top: 8px;
+}
+.parallax-wrapper header .logo-container .logo a {
+  font-family: "Quicksand";
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #E8AC5F;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #000;
+}
+.parallax-wrapper .menu-container {
+  list-style: none;
+  text-decoration: none;
+}
+.parallax-wrapper .menu-container #check {
+  display: none;
+}
+.parallax-wrapper .menu-container #check:checked ~ .menu {
+  right: 0;
+}
+.parallax-wrapper .menu-container #check:checked ~ label #btn {
+  right: 250px;
+  pointer-events: none;
+  opacity: 0;
+}
+.parallax-wrapper .menu-container #check:checked ~ label #cancel {
+  right: 30px;
+}
+.parallax-wrapper .menu-container label #btn, .parallax-wrapper .menu-container label #cancel {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 100px;
+  background-color: #000;
+  padding: 6px 9px;
+}
+.parallax-wrapper .menu-container label #btn {
+  transition: all 0.2s;
+  right: 45px;
+  color: #fff;
+  font-size: 35px;
+  top: -75px;
+}
+.parallax-wrapper .menu-container label #btn:hover {
+  color: #E8AC5F;
+}
+.parallax-wrapper .menu-container label #cancel {
+  transition: all 0.5s;
+  right: -80px;
+  color: #fff;
+  font-size: 25px;
+  top: -83px;
+  z-index: 5;
+}
+.parallax-wrapper .menu-container label #cancel:hover {
+  color: #E8AC5F;
+}
+.parallax-wrapper .menu-container .menu {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  background: #000;
+  height: 100vh;
+  z-index: 4;
+  transition: all 0.2s;
+}
+.parallax-wrapper .menu-container .menu h2 {
+  font-size: 22px;
+  color: #E8AC5F;
+  line-height: 70px;
+  margin-left: 39px;
+  font-family: "Quicksand";
+  text-transform: uppercase;
+  user-select: none;
+}
+.parallax-wrapper .menu-container .menu li {
+  list-style: none;
+  margin-left: 39px;
+}
+.parallax-wrapper .menu-container .menu li:hover a {
+  padding-left: 20px;
+  color: #E8AC5F;
+}
+.parallax-wrapper .menu-container .menu a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+.parallax-wrapper .description {
+  z-index: 3;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding-left: 46px;
+  color: #fff;
+}
+.parallax-wrapper .description h1 {
+  width: 100%;
+  height: auto;
+  font-size: 80px;
+  font-family: "Quicksand";
+  color: #E8AC5F;
+  text-shadow: 0px 3px 6px #0A0A0A;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.parallax-wrapper .description p {
+  font-family: "roboto";
+  font-size: 40px;
+  width: 100%;
+}
+.parallax-wrapper .social {
+  padding-right: 60px;
+  opacity: 0.7;
+  height: 35vh;
+}
+.parallax-wrapper .social ul {
+  list-style: none;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 0;
+}
+.parallax-wrapper .social ul li {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.parallax-wrapper .social ul a {
+  transition: all 0.4s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0;
+  padding: 0;
+}
+.parallax-wrapper .social ul a:hover {
+  font-size: 20px;
+  color: #E8AC5F;
+}
+.parallax-wrapper .social ul a i {
+  margin-left: 16px;
+  font-size: 28px;
+}
+
+.parallax-wrapper::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url("../img/img3.jpg");
+  background-position: center;
+  opacity: 0.8;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+}
+
+/*
+===========================================================================================
+2. Bio Section
+===========================================================================================
+*/
+.bio-section.col-lg-12 {
+  padding: 50px 60px 50px 60px;
+}
+
+.bio-section {
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.bio-section .bio-section-content {
+  line-height: 20px;
+}
+.bio-section .bio-section-content .block-img {
+  overflow: hidden;
+  padding: 0;
+}
+.bio-section .bio-section-content .block-img img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #EAE6E6;
+  border-radius: 7px;
+  padding: 5px;
+}
+.bio-section .bio-section-content .block-text {
+  height: auto;
+  overflow: hidden;
+  padding-right: 0;
+}
+.bio-section .bio-section-content .block-text h2 {
+  color: #E8AC5F;
+  font-size: 2.5rem;
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+.bio-section .bio-section-content .block-text p {
+  color: #4B4242;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "montserrat";
+  font-weight: 500;
+}
+
+/*
+===========================================================================================
+3. Template Section
+===========================================================================================
+*/
+.template-section.col-lg-12 {
+  height: auto;
+  background-color: #4B4242;
+  padding: 50px 60px 50px 60px;
+  text-align: center;
+  overflow: hidden;
+}
+.template-section.col-lg-12 .template-section-content {
+  height: 100%;
+}
+.template-section.col-lg-12 h2 {
+  color: #E8AC5F;
+  font-size: 2.5rem;
+  font-family: "Quicksand";
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.template-section.col-lg-12 .card-container {
+  width: 100%;
+  height: 100%;
+}
+.template-section.col-lg-12 .card-container .card {
+  height: 400px;
+  border-radius: 7px;
+  color: #4B4242;
+  transition: all 0.5s;
+  background: transparent;
+  border: 0;
+  overflow: hidden;
+}
+.template-section.col-lg-12 .card-container .card .card-front, .template-section.col-lg-12 .card-container .card .card-back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.2s linear;
+}
+.template-section.col-lg-12 .card-container .card .card-front {
+  border-radius: 7px;
+  transform: perspective(600px) rotateY(0deg);
+}
+.template-section.col-lg-12 .card-container .card .card-front img {
+  max-width: 100%;
+  height: auto;
+}
+.template-section.col-lg-12 .card-container .card .card-back {
+  border-radius: 7px;
+  background: #fff;
+  transform: perspective(600px) rotateY(180deg);
+}
+.template-section.col-lg-12 .card-container .card .card-back .card-back-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.template-section.col-lg-12 .card-container .card .card-back .btn a {
+  border-radius: 2px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4B4242;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Quicksand";
+  border: 2px solid #4B4242;
+  padding: 8px 18px 8px 18px;
+  transition: all 0.2s;
+}
+.template-section.col-lg-12 .card-container .card .card-back .btn a:hover {
+  color: #E8AC5F;
+  background-color: #4B4242;
+}
+.template-section.col-lg-12 .card-container .card:hover > .card-front {
+  transform: perspective(600px) rotateY(-180deg);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.template-section.col-lg-12 .card-container .card:hover > .card-back {
+  transform: perspective(600px) rotateY(0deg);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*
+  Ow carousel style
+*/
+.owl-stage-outer {
+  height: 100%;
+  position: relative;
+}
+
+/*
+===========================================================================================
+4. App Section
+===========================================================================================
+*/
+.app-section.col-lg-12 {
+  padding: 50px 60px 50px 60px;
+}
+
+.app-section {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.app-section .app-section-content h2 {
+  color: #E8AC5F;
+  font-size: 2.5rem;
+  font-family: "Quicksand";
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.app-section .app-section-content .card-container {
+  padding: 0;
+}
+.app-section .app-section-content .card-container .card {
+  align-items: center;
+  border-radius: 0;
+  border: 0;
+  transition: margin 0.2s;
+}
+.app-section .app-section-content .card-container .card a {
+  color: #4B4242;
+  font-size: 16px;
+  line-height: 25px;
+  text-decoration: none;
+}
+.app-section .app-section-content .card-container .card:hover {
+  margin-top: -15px;
+}
+.app-section .app-section-content .card-container .card .card-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.app-section .app-section-content .card-container .card .card-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+===========================================================================================
+5. footer
+===========================================================================================
+*/
+footer.col-lg-12 {
+  padding: 50px 60px 50px 60px;
+}
+
+footer {
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+footer .description {
+  height: 50%;
+  padding-left: 0;
+}
+footer .description h2 {
+  font-family: "Quicksand";
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #E8AC5F;
+}
+footer .description p {
+  font-family: "montserrat";
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 25px;
+}
+footer .social {
+  padding: 0;
+}
+footer .social ul {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+}
+footer .social ul li {
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .social ul a {
+  transition: all 0.4s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0;
+  padding: 0;
+}
+footer .social ul a:hover {
+  font-size: 20px;
+  color: #E8AC5F;
+}
+footer .social ul a i {
+  margin-left: 16px;
+  font-size: 28px;
+}
+footer .signature {
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.4;
+}
+footer .signature a {
+  text-decoration: none;
+  color: #E8AC5F;
+  font-family: "roboto";
+  opacity: 1;
+}
+
+/*
+===========================================================================================
+6. Single 
+===========================================================================================
+*/
+.page-container.row {
+  color: #fff;
+  height: auto;
+  list-style: none;
+  background-color: #fff;
+  /*
+  6.1 Haeder
+  */
+  /*
+    6.2 Section slide
+  */
+  /*
+    6.3 Section article
+  */
+}
+.page-container.row header {
+  height: auto;
+  padding: 0 60px 0 60px;
+  background-color: #000;
+}
+.page-container.row header .logo-container {
+  padding: 0;
+}
+.page-container.row header .logo-container .logo a {
+  font-family: "Quicksand";
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #E8AC5F;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px #000;
+}
+.page-container.row header .menu-container {
+  text-decoration: none;
+  display: block;
+}
+.page-container.row header .menu-container #check {
+  display: none;
+}
+.page-container.row header .menu-container #check:checked ~ .menu {
+  right: 0;
+}
+.page-container.row header .menu-container #check:checked ~ label #btn {
+  right: 250px;
+  pointer-events: none;
+  opacity: 0;
+}
+.page-container.row header .menu-container #check:checked ~ label #cancel {
+  right: -40px;
+}
+.page-container.row header .menu-container label #btn, .page-container.row header .menu-container label #cancel {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+.page-container.row header .menu-container label #btn {
+  transition: all 0.2s;
+  color: #fff;
+  font-size: 35px;
+  top: 16px;
+}
+.page-container.row header .menu-container label #btn:hover {
+  color: #E8AC5F;
+}
+.page-container.row header .menu-container label #cancel {
+  transition: all 0.6s;
+  right: -90px;
+  color: #fff;
+  font-size: 25px;
+  top: 23px;
+  z-index: 3;
+}
+.page-container.row header .menu-container label #cancel:hover {
+  color: #E8AC5F;
+}
+.page-container.row header .menu-container .menu {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  background: #000;
+  height: 100vh;
+  transition: all 0.2s;
+  z-index: 2;
+}
+.page-container.row header .menu-container .menu h2 {
+  font-size: 22px;
+  color: #E8AC5F;
+  line-height: 70px;
+  margin-left: 39px;
+  font-family: "Quicksand";
+  text-transform: uppercase;
+  user-select: none;
+}
+.page-container.row header .menu-container .menu li {
+  list-style: none;
+  margin-left: 39px;
+}
+.page-container.row header .menu-container .menu li:hover a {
+  padding-left: 20px;
+  color: #E8AC5F;
+}
+.page-container.row header .menu-container .menu a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+.page-container.row section.slide.col-lg-12 {
+  height: 200px;
+  position: relative;
+}
+.page-container.row section.slide.col-lg-12 .slide-title {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: "Quicksand";
+  color: #E8AC5F;
+  width: 100%;
+}
+.page-container.row section.slide.col-lg-12 .slide-title h2 {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+.page-container.row .article-section.col-lg-12 {
+  padding: 50px 60px 50px 60px;
+  color: #fff;
+  box-sizing: border-box;
+  height: auto;
+  line-height: 20px;
+}
+.page-container.row .article-section.col-lg-12 .block-img {
+  overflow: hidden;
+  padding: 0;
+}
+.page-container.row .article-section.col-lg-12 .block-img img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #EAE6E6;
+  border-radius: 7px;
+  padding: 5px;
+}
+.page-container.row .article-section.col-lg-12 .block-text {
+  height: auto;
+  overflow: hidden;
+  padding-right: 0;
+}
+.page-container.row .article-section.col-lg-12 .block-text h2 {
+  color: #E8AC5F;
+  font-size: 2.5rem;
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+.page-container.row .article-section.col-lg-12 .block-text p {
+  color: #4B4242;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "montserrat";
+  font-weight: 500;
+}
+
+/*
+===========================================================================================
+7. Archive 
+===========================================================================================
+*/
+.archive-section.col-lg-12 {
+  padding: 35px 45px 35px 45px;
+}
+
+.archive-section-content {
+  color: #4B4242;
+}
+.archive-section-content .card {
+  border: 0;
+  padding: 30px;
+}
+.archive-section-content .card .card-img-top {
+  height: 230px;
+  overflow: hidden;
+}
+.archive-section-content .card .card-img-top img {
+  max-width: 100%;
+  height: auto;
+}
+.archive-section-content .card .card-body {
+  font-size: 16px;
+  padding-left: 0;
+}
+.archive-section-content .card .card-body h5 {
+  font-size: 2.5rem;
+  font-family: "Quicksand";
+  color: #E8AC5F;
+}
+.archive-section-content .card .card-body .btn {
+  padding-left: 0px;
+}
+.archive-section-content .card .card-body .btn a {
+  text-decoration: none;
+  color: #4B4242;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Quicksand";
+  transition: all 0.2s;
+}
+.archive-section-content .card .card-body .btn a:hover {
+  color: #E8AC5F;
+}
+
+/*
+===========================================================================================
+  Sidebar
+===========================================================================================
+*/
+.sidebar.col-lg-4 {
+  padding-right: 0;
+}
+.sidebar.col-lg-4 .sidebar-content {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+/*
+===========================================================================================
+Media Query
+===========================================================================================
+*/
+/* screen resolution <= 1024 */
+@media screen and (max-width: 1025px) {
+  /*
+  * header
+  */
+  header {
+    height: 100vh;
+  }
+
+  .parallax-wrapper::before {
+    height: 100vh;
+  }
+
+  .parallax-wrapper {
+    height: 100vh;
+  }
+  .parallax-wrapper .description h1 {
+    font-size: 3.5rem;
+  }
+  .parallax-wrapper .description p {
+    font-size: 15px;
+  }
+}
+/* screen resolution <= 992 */
+@media screen and (max-width: 992px) {
+  .bio-section .bio-section-content .block-img {
+    height: 350px;
+  }
+  .bio-section .bio-section-content .block-text h2 {
+    font-size: 2.5rem;
+  }
+  .bio-section .bio-section-content .block-text p {
+    font-size: 16px;
+  }
+}
+/* screen resolution <= 768 */
+@media screen and (max-width: 768px) {
+  .bio-section .bio-section-content .block-img {
+    padding-right: 0;
+  }
+  .bio-section .bio-section-content .block-text {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+}
+/* screen resolution <= 576 */
+@media screen and (max-width: 576px) {
+  .bio-section.col-lg-12, .app-section.col-lg-12, .template-section.col-lg-12, footer.col-lg-12, .archive-section.col-lg-12 {
+    padding: 40px 30px 40px 30px;
+  }
+
+  .bio-section .bio-section-content .block-img {
+    height: 300px;
+  }
+
+  .archive-section-content .card {
+    padding: 0;
+  }
+
+  .page-container.row {
+    /*
+    6.1 Haeder
+    */
+  }
+  .page-container.row header {
+    padding: 0 30px 0 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
