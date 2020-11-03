@@ -1,22 +1,28 @@
 <?php require 'header.php'?>
-	<section class="header-container col-12 row" >
-		<div class="card-top">
+	<section class="header-container col-12 row" id="header-container">
+		<div class="card-top" id="nav-scroll">
 			<div class="container card-top-content">
 				<div class="logo-container  col-lg-4">
 					<a href="#">
 						<img src="img/logo.png" alt="...">
 					</a>
 				</div>
-				<div class="menu-container col-lg-8">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Service</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Projet</a></li>
-						<li><a href="#">Bio</a></li>
+				<menu class="menu-container col-lg-8 col-md-6 col-2">
+					<input type="checkbox" id="check">
+					<label for="check">
+						<i class="fas fa-bars" id="btn"></i>
+						<i class="fas fa-times" id="cancel"></i>
+					</label>
+					<ul class="menu-ul">
+						<li class="menu"><a href="#contact-section">Contact</a></li>
+						<li class="menu"><a href="#blog-section">Blog</a></li>
+						<li class="menu"><a href="#portfolio-section">Portfolio</a></li>
+						<li class="menu"><a href="#service-section">Service</a></li>
+						<li class="menu"><a href="#bio-section">Biographie</a></li>
+						<li class="menu"><a href="#header-container">Accueil</a></li>
 					</ul>
-				</div>
+				</menu>
+				
 			</div>
 		</div>
 			
@@ -34,9 +40,8 @@
 				</div>
 			</div>
 		</div>
-		
 	</section>	
-	<section class="bio-section col-12">
+	<section class="bio-section col-12" id="bio-section">
 		<div class="bio-section-content container">
 			<div class="row">
 				<div class="block-img col-lg-5 col-md-12 col-sm-12">
@@ -63,8 +68,9 @@
 				</div>
 				</div>
 		</div>
+		<svg class="wave dark" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path  d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
 	</section>
-	<section class="service-section col-12">
+	<section class="service-section col-12" id="service-section">
 		<div class="row service-section-content">
 			<h2 class="title col-12">Service</h2>
 			<div class="card-container">
@@ -118,8 +124,9 @@
 				</div>
 			</div>
 		</div>
+		<svg class="wave dark" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path  d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
 	</section>
-	<section class="portfolio-section col-12">
+	<section class="portfolio-section col-12" id="portfolio-section">
 		<div class="row portfolio-section-content">
 			<h2 class="col-12">Portfolio</h2>
 			<div class="card-container col-12">
@@ -178,8 +185,9 @@
 			</div>
 	
 		</div>
+		<svg class="wave dark" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path  d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
 	</section>
-	<section class="blog-section col-12">
+	<section class="blog-section col-12" id="blog-section">
 		<div class="blog-section-content row">
 			<h2 class="col-12">Bolg</h2>
 			<div class="card-container col-12">
@@ -197,7 +205,7 @@
 						</div>
 						<div class="card col-lg-4 col-md-6">
 							<div class="card-content">
-								<img src="img/img.jpg" alt="...">
+								<img src="img/img3.jpg" alt="...">
 								<div class="text-card">
 									<p>28 fev 1999</p>
 									<h3>Your ideal project is here ideal project is here</h3>
@@ -207,7 +215,7 @@
 						</div>
 						<div class="card col-lg-4 col-md-6">
 							<div class="card-content">
-								<img src="img/img.jpg" alt="...">
+								<img src="img/img1.jpg" alt="...">
 								<div class="text-card">
 									<p>28 fev 1999</p>
 									<h3>Your ideal project is here ideal project is here</h3>
@@ -219,8 +227,9 @@
 				</div>
 			</div>
 		</div>
+		<svg class="wave dark" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path  d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
 	</section>
-	<section class="contact-section col-12">
+	<section class="contact-section col-12" id="contact-section">
 		<div class="container">
 			<div class="row">
 				<h2 class="col-12">Contact</h2>
@@ -276,5 +285,6 @@
 				</div>
 			</div>
 		</div>
+		<svg class="wave dark" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 81.717" enable-background="new 0 0 1920 81.717" xml:space="preserve"><path  d="M1920,0c0,0-109.246,46.107-316.333,67.334C1343.5,94,1137.095,77.238,999.167,67.5C854,57.25,637.662,24.697,541.709,18.834C375.334,8.666,147,11,0,37.875V0H1920L1920,0z"></path></svg>
 	</section>
 <?php require 'footer.php'?>
