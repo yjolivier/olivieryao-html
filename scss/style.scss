@@ -7,6 +7,9 @@ $second-font: 'Rubik', sans-serif;
 body, html{
     overflow-x: hidden;
 }
+a.active{
+    color: $premery-color;
+}
 /*
 ===========================================================================================
 1. header
