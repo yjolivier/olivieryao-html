@@ -1,3 +1,15 @@
+<div class="loader-card">
+    <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+    </div>
+
+</div>
 <section class="header-container col-12 row page-section " id="header-container" data-parallax="scroll" data-image-src="img/img2.jpg">
     <div class="card-top" id="nav-scroll">
         <div class="container card-top-content">

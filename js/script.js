@@ -40,3 +40,10 @@ for (var i = 0; i < navigationLinks.length; i++) {
   this.className += " active";
   });
 }
+
+// Page loaded animation
+const loader = document.querySelector(".loader-card");
+
+window.addEventListener("load", ()=>{
+  loader.classList.add("fondu-out");
+});
