@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <img src="img/img.jpg" alt="...">
+                            <img src="public/img/img.jpg" alt="...">
                             <div class="text-card">
                                 <p>28 fev 1999</p>
                                 <h3>Your ideal project is here ideal project is here</h3>
@@ -16,7 +16,7 @@
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <img src="img/img3.jpg" alt="...">
+                            <img src="public/img/img3.jpg" alt="...">
                             <div class="text-card">
                                 <p>28 fev 1999</p>
                                 <h3>Your ideal project is here ideal project is here</h3>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <img src="img/img1.jpg" alt="...">
+                            <img src="public/img/img1.jpg" alt="...">
                             <div class="text-card">
                                 <p>28 fev 1999</p>
                                 <h3>Your ideal project is here ideal project is here</h3>

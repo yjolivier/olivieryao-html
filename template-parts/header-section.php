@@ -10,12 +10,12 @@
     </div>
 
 </div>
-<section class="header-container col-12 row page-section " id="header-container" data-parallax="scroll" data-image-src="img/img2.jpg">
+<section class="header-container col-12 row page-section " id="header-container" data-parallax="scroll" data-image-src="public/img/img2.jpg">
     <div class="card-top" id="nav-scroll">
         <div class="container card-top-content">
             <div class="logo-container  col-lg-4">
                 <a href="#">
-                    <img src="img/logo.png" alt="...">
+                    <img src="public/img/logo.png" alt="...">
                 </a>
             </div>
             <menu class="menu-container col-lg-8 col-md-6 col-2" id="myMenu">

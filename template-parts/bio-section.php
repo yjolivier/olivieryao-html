@@ -2,7 +2,7 @@
     <div class="bio-section-content container">
         <div class="row">
             <div class="block-img col-lg-5 col-md-12 col-sm-12">
-                <img src="img/img5.jpg" alt="...">
+                <img src="public/img/img5.jpg" alt="...">
             </div>
             <div class="block-text col-lg-7 col-md-12 col-sm-12">
                 <h2>Olivier Yao</h2>

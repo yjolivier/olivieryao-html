@@ -3,55 +3,56 @@
         <h2 class="col-12">Portfolio</h2>
         <div class="card-container col-12">
             <div class="container">
-                <div class="row">
+                <div class="row gallery">
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <a href="#" target="_blank">
-                                <img src="img/t1.jpg">
+                            <a href="public/img/t1.jpg">
+                                <img src="public/img/t1.jpg">
                             </a>
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <a href="#" target="_blank">
-                                <img src="img/t2.jpg">
+                            <a href="public/img/t2.jpg">
+                                <img src="public/img/t2.jpg">
                             </a>
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <a href="#" target="_blank">
-                                <img src="img/t3.jpg">
+                            <a href="public/img/t3.jpg">
+                                <img src="public/img/t3.jpg">
                             </a>
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <a href="#" target="_blank">
-                                <img src="img/t4.jpg">
+                            <a href="public/img/t4.jpg">
+                                <img src="public/img/t4.jpg">
                             </a>
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <a href="#" target="_blank">
-                                <img src="img/T1.png">
+                            <a href="public/img/T1.png">
+                                <img src="public/img/T1.png">
                             </a>
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6">
                         <div class="card-content">
-                            <a href="#" target="_blank">
-                                <img src="img/t6.jpg">
+                            <a href="public/img/t6.jpg">
+                                <img src="public/img/t6.jpg">
                             </a>
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
+                    <br clear='all'/>
                 </div>
             </div>
         </div>
