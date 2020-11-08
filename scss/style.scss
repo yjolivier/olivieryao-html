@@ -7,9 +7,6 @@ $second-font: 'Rubik', sans-serif;
 body, html{
     overflow-x: hidden;
 }
-a.active{
-    color: $premery-color;
-}
 /*
 ===========================================================================================
 1. header
@@ -26,9 +23,6 @@ a.active{
 }
 .header-container.row {
     position: relative;
-    background: url('../img/img2.jpg');
-    background-size: cover;
-    background-position: center;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0;
@@ -94,13 +88,13 @@ a.active{
                         float: right;
                         position: relative;
                         &:hover{
-                        .submenu{
-                            display: inline-block;
-                            position: absolute;
-                            top: 100%;
-                            left: 0px;
-                            z-index: 1000;
-                        }
+                            .submenu{
+                                display: inline-block;
+                                position: absolute;
+                                top: 100%;
+                                left: 0px;
+                                z-index: 1000;
+                            }
                         }
                         a{
                             text-decoration: none;
@@ -113,7 +107,10 @@ a.active{
                             transition: all 0.2s ease-in-out;
                             &:hover{
                                 color: $premery-color;
+                            }
                         }
+                        a.active{
+                            color: $premery-color;
                         }
                     }
                     .submenu{
@@ -165,6 +162,9 @@ a.active{
                 margin-bottom: 50px;
                 span{
                     color: $premery-color;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    position: relative;
                 }
             }
             .social-card{

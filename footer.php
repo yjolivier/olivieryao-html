@@ -8,7 +8,8 @@
 			</div>
 		</div>
 		<!-- Script -->
-		<script src="js/smooth.js" style="text/javasript"></script>
-		<script src="js/navscroll.js" style="text/javasript"></script>
+		<script src="js/script.js" style="text/javasript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/parallax.js/parallax.min.js"></script>
 	</body>
 </html>

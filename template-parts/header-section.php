@@ -1,4 +1,4 @@
-<section class="header-container col-12 row page-section" id="header-container">
+<section class="header-container col-12 row page-section " id="header-container" data-parallax="scroll" data-image-src="img/img2.jpg">
     <div class="card-top" id="nav-scroll">
         <div class="container card-top-content">
             <div class="logo-container  col-lg-4">
@@ -6,7 +6,7 @@
                     <img src="img/logo.png" alt="...">
                 </a>
             </div>
-            <menu class="menu-container col-lg-8 col-md-6 col-2">
+            <menu class="menu-container col-lg-8 col-md-6 col-2" id="myMenu">
                 <input type="checkbox" id="check">
                 <label for="check">
                     <i class="fas fa-bars" id="btn"></i>
@@ -18,7 +18,7 @@
                     <li class="menu"><a href="#portfolio-section" class="navigation__link">Portfolio</a></li>
                     <li class="menu"><a href="#service-section" class="navigation__link">Service</a></li>
                     <li class="menu"><a href="#bio-section" class="navigation__link">Biographie</a></li>
-                    <li class="menu"><a href="#header-container" class="navigation__link">Accueil</a></li>
+                    <li class="menu"><a href="#header-container" class="navigation__link active">Accueil</a></li>
                 </ul>
             </menu>
             
