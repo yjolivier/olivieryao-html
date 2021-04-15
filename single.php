@@ -1,33 +1,7 @@
 <?php require 'header.php'?>
 	<div class="page-container row">
-		<header class="col-lg-12">
-			<div class="row">
-				<div class="logo-container  col-lg-6">
-					<div class="logo">
-						<a href="#">otoi</a>
-					</div>
-				</div>
-				<div class="menu-container col-lg-6">
-					<input type="checkbox" id="check">
-					<label for="check">
-						<i class="fas fa-bars" id="btn"></i>
-						<i class="fas fa-times" id="cancel"></i>
-					</label>
-					<div class="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Service</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Projet</a></li>
-							<li><a href="#">Bio</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<section class="slide col-lg-12" style="background: url('img/img.jpg'); background-size: cover; background-position: center;">
+		<?php require 'template-parts/page-head.php'?>
+		<section class="slide col-lg-12" style="background: url('public/img/img.jpg'); background-size: cover; background-position: center;">
 			<div class="slide-title">
 				<h2>Single</h2>
 			</div>
@@ -35,7 +9,7 @@
 		<section class="article-section col-lg-12">
 			<div class="row">
 				<div class="block-img col-lg-4 col-md-4 col-sm-12">
-					<img src="img/img.jpg" alt="...">
+					<img src="public/img/img.jpg" alt="...">
 				</div>
 				<div class="block-text col-lg-4 col-md-4 col-sm-12">
 					<h2>Article title</h2>
